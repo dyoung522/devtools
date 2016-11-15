@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby -w
+
+lib = File.expand_path("../../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require "runenv"
+require "pp"
+
+module DevTools
+  module RunEnv
+    begin
+      OptParse.parse(ARGV)
+    rescue RuntimeError => error
+      puts error
+      exit 1
+    end
+
+    puts "Something useful should go here"
+    pp Options
+  end
+end

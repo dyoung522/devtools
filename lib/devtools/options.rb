@@ -16,8 +16,10 @@ module DevTools
       end
 
       Config.setup do |config|
-        config.const_name = 'Options'
-        config.use_env    = true
+        config.const_name    = 'Options'
+        config.use_env       = true
+        config.env_separator = '_'
+        config.env_converter = :downcase
       end
 
       Config.load_and_set_settings opts[:testing] ? String.new : program_files
@@ -55,7 +57,7 @@ module DevTools
         end
 
         # Verbose switch
-        opts.on_tail("-q", "--quiet", "Run quietly") do
+        opts.on_tail("--quiet", "Run quietly") do
           Options.verbose = 0
         end
 
@@ -72,8 +74,8 @@ module DevTools
       end
     end
 
-    def default_options(options, opts)
-      opts.each do |key, value|
+    def default_options(options, defaults)
+      defaults.each do |key, value|
         options[key] = value unless options.keys.include?(key)
       end
     end

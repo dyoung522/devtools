@@ -17,12 +17,11 @@ Install it from the command line
 Once installed, this gem provides several, mostly independent, utilities
 
 - `runtest` : Runs test suites with an optional search pattern
-- `jdiff`   t co: Compares two git branches and shows a diff of JIRA stories
+- `jdiff`   : Compares two git branches and shows a diff of JIRA stories
 - `prlist`  : Polls git repos and displays a queue of stories ready for QA
+- `runenv`  : Starts and manages a development environment
 
-Future Development
-
-- RunEnv  : Starts and manages a development environment
+All commands feature a `--help` argument which describes their various runtime options
 
 ## Development
 
