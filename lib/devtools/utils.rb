@@ -4,5 +4,9 @@ module DevTools
       puts message
       exit 1
     end
+
+    def self.yon(bool)
+      bool ? "Yes" : "No"
+    end
   end
 end

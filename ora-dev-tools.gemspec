@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "devtools/version"
+require "devtools/globals"
 
 Gem::Specification.new do |spec|
   spec.name    = "ora-dev-tools"
@@ -9,10 +9,12 @@ Gem::Specification.new do |spec|
   spec.authors = ["Donovan Young"]
   spec.email   = ["dyoung522@gmail.com"]
 
-  spec.summary     = %q{Miscellaneous utilities to make a developers life easier}
-  spec.description = %q{Utilities include:\nRunTest - Runs specs based on local configuration} +
-                     %q{\nRunEnv  - Run the dev environment based on local configuration} +
-                     %q{\nPRlist  - Polls git repos and displays a queue of stories ready for QA}
+  spec.summary     = "Miscellaneous utilities to make a developers life easier"
+  spec.description = "Utilities include:\n" +
+                     "jdiff   - Compares two git branches and shows a diff of JIRA stories\n" +
+                     "prlist  - Polls git repos and displays a queue of stories ready for QA\n" +
+                     "runenv  - Run the dev environment based on local configuration\n" +
+                     "runtest - Runs specs based on local configuration\n"
   spec.homepage    = "https://github.com/dyoung522/devtools"
   spec.license     = "MIT"
 

@@ -1,0 +1,8 @@
+bundle: false
+build: true
+run: true
+
+commands:
+  bundle: bundle install && npm install
+  build: npm run package:build
+  run: bundle exec foreman start -f Procfile.dev

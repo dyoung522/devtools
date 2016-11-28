@@ -5,8 +5,7 @@ module DevTools
         {
           build:  true,
           bundle: false,
-          run:    true,
-          test:   false
+          run:    true
         }
       end
 
@@ -31,15 +30,15 @@ module DevTools
         parser.separator ""
         parser.separator "Specific Options:"
 
-        parser.on "-b", "--[no-]build", "[Don't] Run the build job" do |opt|
+        parser.on "-b", "--[no-]build", "[Don't] Run the build job (Default: #{DevTools::Utils.yon Options.build})" do |opt|
           Options.build = opt
         end
 
-        parser.on "-B", "--[no-]bundle", "[Don't] Run the bundler job" do |opt|
+        parser.on "-B", "--[no-]bundle", "[Don't] Run the bundler job (Default: #{DevTools::Utils.yon Options.bundle})" do |opt|
           Options.bundle = opt
         end
 
-        parser.on "-r", "--[no-]run", "[Don't] Run the server job" do |opt|
+        parser.on "-r", "--[no-]run", "[Don't] Run the server job (Default: #{DevTools::Utils.yon Options.run})" do |opt|
           Options.run = opt
         end
 
