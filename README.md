@@ -1,8 +1,18 @@
-[![Build Status](https://travis-ci.org/dyoung522/devtools.svg?branch=master)](https://travis-ci.org/dyoung522/devtools)
-[![Code Climate](https://codeclimate.com/github/dyoung522/devtools/badges/gpa.svg)](https://codeclimate.com/github/dyoung522/devtools)
-[![Test Coverage](https://codeclimate.com/github/dyoung522/devtools/badges/coverage.svg)](https://codeclimate.com/github/dyoung522/devtools/coverage)
+# DevTools *(deprecated)*
 
-# DevTools
+## This code-base has been split into independent repositories.
+
+**Please visit the appropriate repo depending on what you were
+originally looking for:**
+
+- [Base Class (for developing your own modules)](https://github.com/dyoung522/devtools-base)
+- [jdiff](https://github.com/dyoung522/devtools-jdiff)
+- [prlist](https://github.com/dyoung522/devtools-prlist)
+- [runtest](https://github.com/dyoung522/devtools-runtest)
+
+This repository will remain as-is but will no longer be under development.
+
+# Original README follows...
 
 DevTools is a compilation of utilities created to make the development process easier.
 
